@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../Footer';
 
 export default function About() {
   return (
@@ -16,6 +17,7 @@ export default function About() {
         vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
         fames ac ante ipsum primis in faucibus.
       </p>
+      <Footer />
     </div>
   );
 }
