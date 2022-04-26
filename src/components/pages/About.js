@@ -5,17 +5,9 @@ export default function About() {
   return (
     <div>
       <h1>About Page</h1>
+      <img src='https://avatars.githubusercontent.com/u/97902749?v=4'/>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
+        I'm a Full-Stack Software Engineering Student. I'm excited to start my career in the industry and put my skills to use! I've learned several languages and used all of my newly acquired knowledge to create various projects that you can view and inspect on this portfolio page.
       </p>
       <Footer />
     </div>
