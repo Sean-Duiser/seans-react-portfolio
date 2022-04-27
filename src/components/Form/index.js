@@ -14,32 +14,31 @@ function Form() {
 
   const handleEmailChange = (e) => {
     const { target } = e;
-    const inputType = target.name;
     const inputValue = target.value;
-
-    if (inputType === 'email') {
-      setEmail(inputValue);
-    }
-    validateEmail(email);
+    setEmail(inputValue);
   };
 
   const handleMessageChange = (e) => {
     const { target } = e;
-    const inputType = target.name;
     const inputValue = target.value;
 
-    if (inputType === 'message') {
-      setMessage(inputValue);
-    }
+    setMessage(inputValue);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
+    const isValid = validateEmail(email);
+    if (isValid) {
 
-    alert(`Thank you for your message, ${userName}.`);
-    setName('');
-    setEmail('');
-    setMessage('');
+      alert(`Thank you for your message, ${userName}.`);
+      setName('');
+      setEmail('');
+      setMessage('');
+    } else {
+      alert('invalid email');
+    }
+
+
   };
 
   return (
@@ -47,20 +46,22 @@ function Form() {
       <p>
         Hello {userName}
       </p>
-      <form className="form">
+      <form className="form" onSubmit={handleFormSubmit}>
         <input
           value={userName}
           name="name"
           onChange={handleInputChange}
           type="text"
           placeholder="Name"
+          required
         />
         <input
           value={email}
           name="email"
           onChange={handleEmailChange}
-          type="text"
+          type="email"
           placeholder="Email"
+          required
         />
         <input
           value={message}
@@ -68,8 +69,9 @@ function Form() {
           onChange={handleMessageChange}
           type="text"
           placeholder="Message"
+          required
         />
-        <button type="button" onClick={handleFormSubmit}>
+        <button type="submit" >
           Submit
         </button>
       </form>
