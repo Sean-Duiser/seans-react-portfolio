@@ -10,6 +10,8 @@ const styles = {
   },
   link: {
     margin: '5px',
+    color: '#54DEFD',
+    fontWeight: 'bold',
   }
 };
 

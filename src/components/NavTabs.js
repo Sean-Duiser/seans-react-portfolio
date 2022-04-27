@@ -1,47 +1,71 @@
 import React from 'react';
 
+const styles = {
+  NavTabs: {
+    margin: '5px',
+    color: '#49C6E5',
+    fontWeight: 'bold',
+  },
+  header: {
+    backgroundColor: '#FFFBFA',
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column'
+  },
+  h1: {
+    color: '#49C6E5',
+    textAlign: 'center'
+  }
+};
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <div>
-      <h1>Sean Duiser</h1>
-      <ul className="nav nav-tabs">
-        <li className="nav-item">
-          <a
-            href="#about"
-            onClick={() => handlePageChange('About')}
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-          >
-            About
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#resume"
-            onClick={() => handlePageChange('Resume')}
-            className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-          >
-            Resume
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#portfolio"
-            onClick={() => handlePageChange('Portfolio')}
-            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
-          >
-            Portfolio
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            href="#contact"
-            onClick={() => handlePageChange('Contact')}
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-          >
-            Contact
-          </a>
-        </li>
-      </ul>
+      <header style={styles.header}>
+        <h1 style={styles.h1}>Sean Duiser</h1>
+        <ul style={styles.NavTabs} className="nav nav-tabs">
+          <li className="nav-item">
+            <a
+              href="#about"
+              onClick={() => handlePageChange('About')}
+              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+              style={styles.NavTabs}
+            >
+              About
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#resume"
+              onClick={() => handlePageChange('Resume')}
+              className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+              style={styles.NavTabs}
+            >
+              Resume
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#portfolio"
+              onClick={() => handlePageChange('Portfolio')}
+              className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+              style={styles.NavTabs}
+            >
+              Portfolio
+            </a>
+          </li>
+          <li className="nav-item">
+            <a
+              href="#contact"
+              onClick={() => handlePageChange('Contact')}
+              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+              style={styles.NavTabs}
+            >
+              Contact
+            </a>
+          </li>
+        </ul>
+      </header>
     </div>
   );
 }

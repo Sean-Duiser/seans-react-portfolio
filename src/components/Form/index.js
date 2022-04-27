@@ -2,6 +2,35 @@ import React, { useState } from 'react';
 import { validateEmail } from '../../utils/helpers';
 import './style.css';
 
+const styles = {
+  body: {
+    backgroundColor: '#846C5B',
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column'
+
+  },
+  h1: {
+    color: '#4DA167',
+  },
+  p: {
+    color: '#FFFBFA',
+    display: 'flex',
+    textAlign: 'center',
+    justifyContent: 'center'
+  },
+  form: {
+    width: '18rem',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  submit: {
+    backgroundColor: '#49C6E5',
+    borderRadius: '10px'
+  }
+}
+
 function Form() {
   const [userName, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -43,10 +72,10 @@ function Form() {
 
   return (
     <div>
-      <p>
+      <p style={styles.p}>
         Hello {userName}
       </p>
-      <form className="form" onSubmit={handleFormSubmit}>
+      <form style={styles.form} className="form" onSubmit={handleFormSubmit}>
         <input
           value={userName}
           name="name"
@@ -71,7 +100,7 @@ function Form() {
           placeholder="Message"
           required
         />
-        <button type="submit" >
+        <button style={styles.submit} type="submit" >
           Submit
         </button>
       </form>
