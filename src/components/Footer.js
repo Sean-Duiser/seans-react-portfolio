@@ -18,17 +18,17 @@ const styles = {
 function Footer({ currentPage, handlePageChange }) {
   return (
     <div style={styles.footer}>
-      <a href="https://github.com/Sean-Duiser">
+      <a target='_blank' href="https://github.com/Sean-Duiser">
         <p style={styles.link}>
           GitHub
         </p>
       </a>
-      <a href="https://www.linkedin.com/in/sean-duiser/">
+      <a target='_blank' href="https://www.linkedin.com/in/sean-duiser/">
         <p style={styles.link}>
           LinkedIn
         </p>
       </a>
-      <a href="https://stackoverflow.com/users/18143464/sean-duiser">
+      <a target='_blank' href="https://stackoverflow.com/users/18143464/sean-duiser">
         <p style={styles.link}>
           StackOverflow
         </p>

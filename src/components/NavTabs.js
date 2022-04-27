@@ -7,10 +7,11 @@ const styles = {
     fontWeight: 'bold',
   },
   header: {
-    backgroundColor: '#FFFBFA',
+    backgroundImage: '#FFFBFA',
     display: 'flex',
     alignItems: 'center',
-    flexDirection: 'column'
+    flexDirection: 'column',
+    justifyContent: 'center'
   },
   h1: {
     color: '#49C6E5',
