@@ -3,7 +3,7 @@
 
 ## Description
 
-Looking For Good Grades was created as an an easy-to-use portal for users to get together and arrange study groups related to different programming languages. It uses an API-style configuration in order to allow a user to create and login to an account. Once a user is logged in they can navigate the site in order to post a study session or view other members session details. Along with creating a session, a commenting system exists in order to post specific comments regarding a particular session. These comment posts can also be modified or deleted. Specific elements such as meetup location along with study dates and times can all be addressed through LFGG.
+This is a portfolio page designed entirely using React. The site is fully responsive and mobile friendly. The portfolio site uses a custom color pallette and Bootstrap to design the site. The intention of this portfolio page is to showcase my React abilities as well as display some additional work of mine.
 
 ## Table of Contents
 
@@ -39,6 +39,9 @@ This page is intended to provide any curious parties with an insight into my ski
 
 ## Technology
 This application uses React to piece together multiple componentents, utilities, and assets to create an intuitive and elegant portfolio page. Bootstrap was ued to perform certain CSS tasks, while React styling was used for the rest.
+
+## Future Development
+The contact page has a form that currently does not go anywhere. The next step in development will be to activate this form so any entries are sent to my email address.
 
 ## Links
 [Deployed Link](https://sean-duiser.github.io/seans-react-portfolio/).
